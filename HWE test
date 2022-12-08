@@ -1,0 +1,8 @@
+install.packages("genetics")
+library(genetics)
+df <- read.csv("C:/Users/rbooy/Documents/HWE_test.csv")
+dim(df)
+#example.data  <- c("starOther/starOther","starOther/star17","starOther/starOther","star17/star17","starOther/starOther", "starOther/starOther","starOther/starOther","starOther/starOther","star17/star17")
+g1 <- genotype(df)
+g1
+HWE.test(g1)
