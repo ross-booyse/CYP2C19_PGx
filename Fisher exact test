@@ -1,0 +1,17 @@
+?fisher.test()
+dat <- data.frame(
+  SSA = c(22,78),
+  SAS= c(2, 98),
+  row.names= c('PM','other'),
+  stringsAsFactors = FALSE
+)
+colnames(dat) <- c("SSA", "SAS")
+
+dat
+
+df <- read.csv("C:/Users/rbooy/Documents/test.csv",sep = ',',row.names= c('SSA','SAS'))
+
+#chisq.test(df)$expected
+
+test <- fisher.test(dat)
+test
