@@ -14,7 +14,7 @@ check = []
 count_list1 = []
 
 for line in f:
-        line = line.strip().split()
+        line = line.strip().split('/')
         data.append(line[0])
         data.append(line[1])
 
