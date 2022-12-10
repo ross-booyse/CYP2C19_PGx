@@ -9,7 +9,7 @@ pop_size= int(sys.argv[2])
 f = open(infile, 'r')
 
 
-
+#dictionary for CYP2C19
 dict1 = {
 '*1':'nf',
 '*2':'nonf',
