@@ -16,6 +16,7 @@ dip3_count = length(which(diplotypes == dip3))
 data  <- c(rep(hom, hom_count), rep(het, het_count), rep(other_dips, other_dips_count))
 
 g1 <- genotype(data)
-g1
-HWE.test(g1)
+
+hwe_test <- HWE.test(g1)
+#p_value_test_allele = hwe_test$p.value
 }
